@@ -3,6 +3,7 @@ import Navbar from './component/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ResepiFrom from './component/ResepiFrom';
 import Home from './component/Home';
+import EditPage from './component/EditPage';
 
 function App() {
   return (
@@ -10,10 +11,11 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<ResepiFrom/>}>
-        <Route path='/Home' element={<Home/>}></Route>
+      <Route path='/' element={<ResepiFrom/>}/>
+        <Route path='/Home' element={<Home/>}/>
+        <Route path='/EdiePage/:id' element={<EditPage/>}/>
 
-      </Route>
+      
     </Routes>
     </BrowserRouter>
      

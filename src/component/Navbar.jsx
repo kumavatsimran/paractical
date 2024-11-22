@@ -16,8 +16,12 @@ function Navbar() {
           <Link className="nav-link active" aria-current="page" to="/"> Form</Link>
         </li>
         <li className="nav-item">
-          {/* <Link  to='/form'>Form<Link/> */}
+         
           <Link className="nav-link active" to='/Home'>Home</Link>
+        </li>
+          <li className="nav-item">
+         
+          <Link className="nav-link active" to='/EdiePage/:id'>Edite</Link>
         </li>
        
         
